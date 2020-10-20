@@ -17,21 +17,26 @@ export default function Routes(){
         <NavigationContainer>
             <Navigator screenOptions={{headerShown: false, cardStyle: {backgroundColor: '#f2f3f5'}}}>
                 <Screen 
-                name="Orphanagesmap" 
-                component={OrphanagesMap}/>
+                    name="Orphanagesmap" 
+                    component={OrphanagesMap}
+                />
 
                 <Screen 
-                name="OrphanageDetails" 
-                component={OrphanageDetails}
-                options={{headerShown: true, header: ()=> <Header title="Orfanato"/>}}/>
+                    name="OrphanageDetails" 
+                    component={OrphanageDetails}
+                    options={{headerShown: true, header: ()=> <Header title="Orfanato"/>}}
+                />
+
+                <Screen     
+                    name="SelectMapPosition" 
+                    component={SelectMapPosition}
+                    options={{headerShown: true, header: ()=> <Header title="Orfanato"/>}}
+                />
 
                 <Screen 
-                name="SelectMapPosition" 
-                component={SelectMapPosition}/>
-
-                <Screen 
-                name="OrphanageData" 
-                component={OrphanageData}/>
+                    name="OrphanageData" 
+                    component={OrphanageData}
+                />
             </Navigator>
         </NavigationContainer>
 

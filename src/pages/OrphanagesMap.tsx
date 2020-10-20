@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-nati
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import { Feather } from '@expo/vector-icons';
+import {RectButton} from 'react-native-gesture-handler';
 
 import mapMarker from '../images/marker.png';
 import { useNavigation } from '@react-navigation/native';
@@ -51,9 +52,9 @@ export default function OrphanagesMap() {
         <View style={styles.footer}>
           <Text style={styles.footerText}>2 orfanatos encontrados</Text>
 
-          <TouchableOpacity style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
+          <RectButton style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
             <Feather name="plus" style={styles.buttonIcon}/>
-          </TouchableOpacity>
+          </RectButton>
         </View>
     </View>
     )
