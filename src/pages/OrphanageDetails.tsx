@@ -5,7 +5,7 @@ import { Feather, FontAwesome } from '@expo/vector-icons';
 
 import { useRoute } from '@react-navigation/native';
 
-import mapMarkerImg from '../images/map-marker.png';
+import mapMarkerImg from '../images/marker.png';
 import { RectButton } from 'react-native-gesture-handler';
 import api from '../services/api';
 

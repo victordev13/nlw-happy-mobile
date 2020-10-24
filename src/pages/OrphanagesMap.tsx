@@ -15,7 +15,6 @@ interface Orphanage{
     id: number;
     name: string;
     latitude: number;
-    latitude: number;
     longitude: number;
 }
 

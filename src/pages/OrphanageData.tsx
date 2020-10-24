@@ -22,7 +22,7 @@ export default function OrphanageData() {
       <Text style={styles.label}>Whatsapp</Text>
       <TextInput
         style={styles.input}
-      />
+      />  
 
       <Text style={styles.label}>Fotos</Text>
       <TouchableOpacity style={styles.imagesInput} onPress={() => {}}>
