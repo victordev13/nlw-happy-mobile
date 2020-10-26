@@ -52,7 +52,7 @@ export default function OrphanageData() {
 
     await api.post('/orfanatos', data);
 
-    // navigation.navigate('./OrphanagesMap');
+    navigation.navigate('./OrphanagesMap');
   }
 
   async function handleSelectImages(){
@@ -106,7 +106,7 @@ export default function OrphanageData() {
       <View style={styles.uploadedImagesContainer}>
         {images.map(image => {
           return(
-            <Image source={{uri: image}} key={image} style={styles.uploadedImage}/>
+            <Image source={{uri: String(image)}} key={String(image)} style={styles.uploadedImage}/>
           );
         })}
       </View>
