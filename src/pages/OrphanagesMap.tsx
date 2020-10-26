@@ -7,7 +7,7 @@ import { Feather } from '@expo/vector-icons';
 import {RectButton} from 'react-native-gesture-handler';
 
 import mapMarker from '../images/marker.png';
-import { useNavigation, useFocusEffect, useFocusEffect } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 import api from '../services/api';
 
