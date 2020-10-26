@@ -52,7 +52,7 @@ export default function OrphanageData() {
 
     await api.post('/orfanatos', data);
 
-    navigation.navigate('./OrphanagesMap');
+    navigation.navigate('OrphanagesMap');
   }
 
   async function handleSelectImages(){
